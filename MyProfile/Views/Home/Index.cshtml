@@ -7,7 +7,7 @@
 <div class="row">
     <div class="col-md-6">
         
-        <img src="~/Content/Pic.PNG" width="495" height="422"alt="imagre"/>
+        <img src="~/Content/Pic2.PNG" width="495" height="422"alt="imagre"/>
     </div>
 
     <div class="col-md-6">
@@ -15,9 +15,48 @@
             <h3><b>Hello There!</b></h3>
         </div>
         <br />
-        <h1>I'm Nomawethu Jaceni</h1>
+        <h1><span>Nomawethu</span><span> Jaceni</span></h1>
+        <style>
+            h1 {
+                color: hsl(0, 0%, 28%);
+                font-size: 50px;
+                font-weight: bold;
+                font-family: monospace;
+                letter-spacing: 7px;
+                cursor: pointer;
+            }
+
+                h1 span {
+                    transition: 0.5s ease-out;
+                }
+
+                h1:hover span:nth-child(1) {
+                    margin-right: 5px;
+                }
+
+                    h1:hover span:nth-child(1):after {
+                        content: "'";
+                    }
+
+                h1:hover span:nth-child(2) {
+                    margin-left: 30px;
+                }
+
+                h1:hover span {
+                    color: #fff;
+                    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+                }
+        </style>
         <h4>Developer and Hairstylist</h4>
-        <p><a class="btn btn-default" href="~/Views/Home/About.cshtml">Learn more &raquo;</a></p>
+        <a href="@Url.Action("About","")"><input type="button" value="Learn More >>>" &raquo; /></a><br />
+        <br />
+        <br />
+        <p>I have National Diploma in Information Technology. I graduated in 2021 at Tshwane University of Technology</p>
+        <p>I am looking for an opportunity to kickstart my career in the IT industry</p>
+        <p>Programming languages that I am familiar with are  Java, PHP, ASP.Net MVC, C#, Ionic and Angular</p>
+
+
+
     </div>
 </div>
 
